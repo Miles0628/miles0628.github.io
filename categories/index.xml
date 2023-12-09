@@ -1,43 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 陋室</title>
     <link>https://sonneblog.com/categories/</link>
     <description>Recent content in Categories on 陋室</description>
-    <image>
-      <title>陋室</title>
-      <url>https://sonneblog.com/images/profile.png</url>
-      <link>https://sonneblog.com/images/profile.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Feb 2021 15:30:00 -0800</lastBuildDate><atom:link href="https://sonneblog.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2021 15:30:00 -0800</lastBuildDate>
+    <atom:link href="https://sonneblog.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Life</title>
       <link>https://sonneblog.com/categories/life/</link>
       <pubDate>Sat, 06 Feb 2021 15:30:00 -0800</pubDate>
-      
       <guid>https://sonneblog.com/categories/life/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>OnTheRoad</title>
       <link>https://sonneblog.com/categories/ontheroad/</link>
       <pubDate>Fri, 09 Oct 2015 21:05:00 -0800</pubDate>
-      
       <guid>https://sonneblog.com/categories/ontheroad/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Read</title>
       <link>https://sonneblog.com/categories/read/</link>
       <pubDate>Sat, 02 Aug 2014 15:05:00 -0800</pubDate>
-      
       <guid>https://sonneblog.com/categories/read/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
