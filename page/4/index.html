@@ -1,407 +1,239 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark"><head>
-    <title>陋室 · </title>
-    <meta charset="utf-8">
-    
-    <meta name="generator" content="Hugo 0.120.4">
-    <meta property="og:title" content="陋室" />
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.120.4"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>陋室</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="https://sonneblog.com/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5c25c975546c048d1a5600aadb48425ae1bc921a9a18fe67d6955c9535260811.css" integrity="sha256-XCXJdVRsBI0aVgCq20hCWuG8khqaGP5n1pVclTUmCBE=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sonneblog.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sonneblog.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sonneblog.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sonneblog.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sonneblog.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://sonneblog.com/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="陋室" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://sonneblog.com/" /><meta property="og:image" content="https://sonneblog.com/images/profile.png"/><meta property="og:site_name" content="陋室" />
 
-
-
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="">
-    
-    
-    
-    <link rel="stylesheet" type="text/css" href="https://sonneblog.com/css/style.min.48f65fc71bbd394bf21da9f76af8c2ceb4149c8f36e8e9396e9b01d60392e207.css" integrity="sha256-SPZfxxu9OUvyHan3avjCzrQUnI826Ok5bpsB1gOS4gc=" crossorigin="anonymous" type="text/css">
-
-    
-    
-    
-    <script type="text/javascript" src="https://sonneblog.com/js/heyo-header.min.a3fa728a9f57833a31dfb45c48caaf1e4890c8c97f07bd7133fc2359745edb5d.js" integrity="sha256-o/pyip9Xgzox37RcSMqvHkiQyMl/B71xM/wjWXRe210=" crossorigin="anonymous"></script>
-
-    
-    
-    <link rel="stylesheet" type="text/css" href="https://sonneblog.com/css/fonts.59f3b016a799c0a0da15e92f5f71ef6230a78f46bdde3a3bee35c7208aa7d388.css" integrity="sha256-WfOwFqeZwKDaFekvX3HvYjCnj0a93jo77jXHIIqn04g=" crossorigin="anonymous">
-
-    
-    
-    
-    <script type="text/javascript" src="https://sonneblog.com/js/sidebar-toc.min.788b639e2ec681549740b90b3b865d5f9e1789e3ca9c06ccc45d65655434c954.js" integrity="sha256-eItjni7GgVSXQLkLO4ZdX54XiePKnAbMxF1lZVQ0yVQ=" crossorigin="anonymous"></script>
-
-    
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" defer></script>
-
-        
-        
-        <script type="text/javascript" src="https://sonneblog.com/js/sketch-graph.03320725b21ce4317bd5ed669009dc0a23c081238ef7f7bc008a228b43a82a1b.js" integrity="sha256-AzIHJbIc5DF71e1mkAncCiPAgSOO9/e8AIoii0OoKhs=" crossorigin="anonymous" defer></script>
-
-        
-        
-        <script type="text/javascript" src="https://sonneblog.com/js/sketch-digitalRain.b89bd8d6657a76e563f32f797b8ae5dd3aefcb6f37fb071f8885bd3d4deb2c32.js" integrity="sha256-uJvY1mV6duVj8y95e4rl3Trvy283&#43;wcfiIW9PU3rLDI=" crossorigin="anonymous" defer></script>
-
-        
-        
-        <script type="text/javascript" src="https://sonneblog.com/js/sketch-circleBrushStrokes.fc8dbdf1eefdd31d098396d46dfb4063b38ffc0314ff5b649924c29e42f40c2a.js" integrity="sha256-/I298e790x0Jg5bUbftAY7OP/AMU/1tkmSTCnkL0DCo=" crossorigin="anonymous" defer></script>
-
-        
-        
-        <script type="text/javascript" src="https://sonneblog.com/js/sketch-meta.03b0bcb670cf00e567aae068a43937c146fe1a88b953db016c1c64888a04ce4f.js" integrity="sha256-A7C8tnDPAOVnquBopDk3wUb&#43;Goi5U9sBbBxkiIoEzk8=" crossorigin="anonymous" defer></script>
-
-        
-        
-        <script type="text/javascript" src="https://sonneblog.com/js/sidebar-sketch.min.2e95015880993ef9abcad62d111decea22406616931bce193254bf8af2339953.js" integrity="sha256-LpUBWICZPvmrytYtER3s6iJAZhaTG84ZMlS/ivIzmVM=" crossorigin="anonymous" defer></script>
-    
-    
-    
-    <link rel="shortcut icon" href="https://sonneblog.com/web/favicon.pngfavicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://sonneblog.com/web/favicon.pngapple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://sonneblog.com/web/favicon.pngfavicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://sonneblog.com/web/favicon.pngfavicon-16x16.png">
-    <link rel="canonical" href="https://sonneblog.com/">
-    <link rel="alternate" type="application/rss+xml" href="https://sonneblog.com/index.xml" title="陋室" />
-    
-    
-    
-    
-    
-
-    
-    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://sonneblog.com/images/profile.png"/>
 
 <meta name="twitter:title" content="陋室"/>
 <meta name="twitter:description" content=""/>
 
-</head><body>
-        <div class="main">
-            <div class="page-top">
-    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    <ul class="nav" id="navMenu">
-        
-        
-        <li class="grow"></li>
-        
-        <li>
-            <a class="theme-switch" title="Switch Theme">
-                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-            <div class="sidebar" id="sidebar">
-    <div class="top-toc">
-        <img src="https://sonneblog.com/web/avatar.png" alt="profile picture">
-        
-        <a href="/">陋室</a>
-    </div>
-    
-    <div class="middle-sidebar grow" id="middle-sidebar">
-        
-            
-            
-                
-            
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "陋室",
+  "url": "https://sonneblog.com/",
+  "description": "",
+  "thumbnailUrl": "https://sonneblog.com/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
+</head>
 
-            
-                
-                
-                
-                
-                <div
-                    id="sidebar-sketch"
-                    data-sketch="meta"
-                    data-sketch-starting=""
-                    data-sketch-show-hover="true"></div>
-            
-        
-    </div>
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-    <div class="footer">
-        <ul class="social-links">
-            
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sonneblog.com/" accesskey="h" title="陋室 (Alt + H)">陋室</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sonneblog.com/" title="Home">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sonneblog.com/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sonneblog.com/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
         </ul>
+    </nav>
+</header>
+<main class="main"> 
 
-        <div class="by">by  <b>·</b> 2023</div>
-    </div>
-</div>
-            <div class="content">
-    
-    
-        
-        <div class="post summary">
-            
-            <div class="post-text grow">
-                <div class="post-title">
-                    <h5><a href=/posts/2010-08-03-liang-ping-pi-jiu-yi-zhi-yan/>两瓶啤酒YI支烟</a></h5>
-                </div>
-                <div class="post-header">
-    <div style="padding-top: 10px;">
-        <i class="far fa-calendar"></i><span class="date">Aug 3, 2010</span>
-        <i class="far fa-clock"></i><span class="reading-time">One minute</span>
-        
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>两瓶啤酒YI支烟
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>武侠小说看多了特别是金庸的小说会发现江湖上的人物正义指数是以酒量来衡量的，像鸠摩智那样的鸟人自然滴酒不沾，而乔峰这号把酒当水喝的汉子在剧中地位自然一目了然。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-08-03 22:12:00 -0800 -0800'>August 3, 2010</span></footer>
+  <a class="entry-link" aria-label="post link to 两瓶啤酒YI支烟" href="https://sonneblog.com/posts/2010-08-03-liang-ping-pi-jiu-yi-zhi-yan/"></a>
+</article>
 
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>扎西德勒与糖果的故事
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>北哥那时候多瘦 哈哈
+怒江72弯
+不知从什么时候藏区的大地上似乎流传起了一个美丽的传说。
+如果你面前飘过骑车的人，对他喊声“扎西德勒”就会有糖果飞入你的掌心。
+诚然，对于长久地生活在辽阔高原上整日与牛羊做伴的孩子来说，这是一个美丽的传说，但对于骑车的人来说却不折不扣地算是一种折磨。
+记得刚翻过折多山，下往新都桥的路上，风光秀丽，并且初次听到沿路的同胞跟我喊“扎西德勒”，心中欣喜万分，感慨这里的人民淳朴可爱。后来才终于明白想要能有这种心情是必须建立在车速35km/h之上的，否则的话，完全是另一种意境。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-08-01 22:08:00 -0800 -0800'>August 1, 2010</span></footer>
+  <a class="entry-link" aria-label="post link to 扎西德勒与糖果的故事" href="https://sonneblog.com/posts/2010-08-01-zha-xi-de-le-yu-tang-guo-de-gu-shi/"></a>
+</article>
 
-    </div>
-</div>
-                <div class="post-content">
-                    <div class="p_part">
-                        
-                        
-                            <p><p><img src="/tibet/haizi.jpg" alt="image"></p>
-<p>武侠小说看多了特别是金庸的小说会发现江湖上的人物正义指数是以酒量来衡量的，像鸠摩智那样的鸟人自然滴酒不沾，而乔峰这号把酒当水喝的汉子在剧中地位自然一目了然。</p></p>
-                        
-                    </div>
-                </div>
-                <div class="post-footer">
-                    <div class="meta">
-                        <div class="info">
-                            <a class="category" href="/categories/ontheroad/">OnTheRoad</a>
-                            
-                            
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>藏区无平路
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>太阳贼大
+今晚到的理塘，海拔4000多也就算了，温度还低得可以，街上满是穿羽绒服的喇嘛，而我唯一的一条长裤因为要恢复它的英雄本色，顾早早地挂在了衣绳，遂当我上街时有种错觉自己是日本的那些冬天上学还穿裙子的女学生，当然我是男的，穿短裤，也就这么一说。
+如此天气，北哥给了建设性的意见，去吃火锅。自然想到成都吃的重庆火锅，虽说辣得受不了，不过对于一个在温度不到10度的地方穿短裤的人来说也不失为一个绝妙的主意。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-07-26 22:40:00 -0800 -0800'>July 26, 2010</span></footer>
+  <a class="entry-link" aria-label="post link to 藏区无平路" href="https://sonneblog.com/posts/2010-07-26-zang-qu-wu-ping-lu/"></a>
+</article>
 
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>又是YI天
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>午睡正酣时，蓦地听到一阵紧促的敲门声，惊醒后的第一反应是去开门。我个人对有这一的良好习惯还是比较骄傲的，一听到敲门声也不攀比，从来都是主动第一个去开门。恩，想来这一习惯的养成大概是从我一人独居宿舍开始的。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-06-26 18:58:00 -0800 -0800'>June 26, 2010</span></footer>
+  <a class="entry-link" aria-label="post link to 又是YI天" href="https://sonneblog.com/posts/2010-06-26-you-shi-yi-tian/"></a>
+</article>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="post summary">
-            
-            <div class="post-text grow">
-                <div class="post-title">
-                    <h5><a href=/posts/2010-08-01-zha-xi-de-le-yu-tang-guo-de-gu-shi/>扎西德勒与糖果的故事</a></h5>
-                </div>
-                <div class="post-header">
-    <div style="padding-top: 10px;">
-        <i class="far fa-calendar"></i><span class="date">Aug 1, 2010</span>
-        <i class="far fa-clock"></i><span class="reading-time">One minute</span>
-        
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>本山大叔与国窖3751
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>白岩松曾经说过，就是把一只狗放在央视连播三年它也能成为全国知名小狗，此话显示了央视强大的影响。话虽如此，尽管赵本山出演春晚十几载其知名度一大部分来源于其央视无与伦比的收视率，但不可否认的是另有相当一部分原因得益于本山大叔独特的个人魅力。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-02-20 23:40:00 -0800 PST'>February 20, 2010</span></footer>
+  <a class="entry-link" aria-label="post link to 本山大叔与国窖3751" href="https://sonneblog.com/posts/2010-02-20-ben-shan-da-shu-yu-guo-jiao-3751/"></a>
+</article>
 
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>拜年
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>04年走后只在暑假回老家过几次，自然也就提不上在老家过年了。也就今年，趁着职业生涯以来最轻松的一个赛季，隆冬三九未过赶回老家期待感受久违的年味。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-02-18 12:14:00 -0800 PST'>February 18, 2010</span></footer>
+  <a class="entry-link" aria-label="post link to 拜年" href="https://sonneblog.com/posts/2010-02-18-bai-nian/"></a>
+</article>
 
-    </div>
-</div>
-                <div class="post-content">
-                    <div class="p_part">
-                        
-                        
-                            <p><p><img src="/tibet/beige.jpg" alt="image"></p>
-<blockquote>
-<p><em><strong>北哥那时候多瘦 哈哈</strong></em></p>
-</blockquote>
-<p><img src="/tibet/nujiang.jpg" alt="image"></p>
-<blockquote>
-<p><em><strong>怒江72弯</strong></em></p>
-</blockquote>
-<p>不知从什么时候藏区的大地上似乎流传起了一个美丽的传说。</p>
-<p>如果你面前飘过骑车的人，对他喊声“扎西德勒”就会有糖果飞入你的掌心。</p>
-<p>诚然，对于长久地生活在辽阔高原上整日与牛羊做伴的孩子来说，这是一个美丽的传说，但对于骑车的人来说却不折不扣地算是一种折磨。</p>
-<p>记得刚翻过折多山，下往新都桥的路上，风光秀丽，并且初次听到沿路的同胞跟我喊“扎西德勒”，心中欣喜万分，感慨这里的人民淳朴可爱。后来才终于明白想要能有这种心情是必须建立在车速35km/h之上的，否则的话，完全是另一种意境。</p></p>
-                        
-                    </div>
-                </div>
-                <div class="post-footer">
-                    <div class="meta">
-                        <div class="info">
-                            <a class="category" href="/categories/ontheroad/">OnTheRoad</a>
-                            
-                            
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="post summary">
-            
-            <div class="post-text grow">
-                <div class="post-title">
-                    <h5><a href=/posts/2010-07-26-zang-qu-wu-ping-lu/>藏区无平路</a></h5>
-                </div>
-                <div class="post-header">
-    <div style="padding-top: 10px;">
-        <i class="far fa-calendar"></i><span class="date">Jul 26, 2010</span>
-        <i class="far fa-clock"></i><span class="reading-time">One minute</span>
-        
-
-
-    </div>
-</div>
-                <div class="post-content">
-                    <div class="p_part">
-                        
-                        
-                            <p><p><img src="/tibet/sun.jpg" alt="image"></p>
-<blockquote>
-<p><em><strong>太阳贼大</strong></em></p>
-</blockquote>
-<p>今晚到的理塘，海拔4000多也就算了，温度还低得可以，街上满是穿羽绒服的喇嘛，而我唯一的一条长裤因为要恢复它的英雄本色，顾早早地挂在了衣绳，遂当我上街时有种错觉自己是日本的那些冬天上学还穿裙子的女学生，当然我是男的，穿短裤，也就这么一说。</p>
-<p>如此天气，北哥给了建设性的意见，去吃火锅。自然想到成都吃的重庆火锅，虽说辣得受不了，不过对于一个在温度不到10度的地方穿短裤的人来说也不失为一个绝妙的主意。</p></p>
-                        
-                    </div>
-                </div>
-                <div class="post-footer">
-                    <div class="meta">
-                        <div class="info">
-                            <a class="category" href="/categories/ontheroad/">OnTheRoad</a>
-                            
-                            
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="post summary">
-            
-            <div class="post-text grow">
-                <div class="post-title">
-                    <h5><a href=/posts/2010-06-26-you-shi-yi-tian/>又是YI天</a></h5>
-                </div>
-                <div class="post-header">
-    <div style="padding-top: 10px;">
-        <i class="far fa-calendar"></i><span class="date">Jun 26, 2010</span>
-        <i class="far fa-clock"></i><span class="reading-time">One minute</span>
-        
-
-
-    </div>
-</div>
-                <div class="post-content">
-                    <div class="p_part">
-                        
-                        
-                            <p><p>午睡正酣时，蓦地听到一阵紧促的敲门声，惊醒后的第一反应是去开门。我个人对有这一的良好习惯还是比较骄傲的，一听到敲门声也不攀比，从来都是主动第一个去开门。恩，想来这一习惯的养成大概是从我一人独居宿舍开始的。</p></p>
-                        
-                    </div>
-                </div>
-                <div class="post-footer">
-                    <div class="meta">
-                        <div class="info">
-                            <a class="category" href="/categories/life/">Life</a>
-                            
-                            
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="post summary">
-            
-            <div class="post-text grow">
-                <div class="post-title">
-                    <h5><a href=/posts/2010-02-20-ben-shan-da-shu-yu-guo-jiao-3751/>本山大叔与国窖3751</a></h5>
-                </div>
-                <div class="post-header">
-    <div style="padding-top: 10px;">
-        <i class="far fa-calendar"></i><span class="date">Feb 20, 2010</span>
-        <i class="far fa-clock"></i><span class="reading-time">One minute</span>
-        
-
-
-    </div>
-</div>
-                <div class="post-content">
-                    <div class="p_part">
-                        
-                        
-                            <p><p>白岩松曾经说过，就是把一只狗放在央视连播三年它也能成为全国知名小狗，此话显示了央视强大的影响。话虽如此，尽管赵本山出演春晚十几载其知名度一大部分来源于其央视无与伦比的收视率，但不可否认的是另有相当一部分原因得益于本山大叔独特的个人魅力。</p></p>
-                        
-                    </div>
-                </div>
-                <div class="post-footer">
-                    <div class="meta">
-                        <div class="info">
-                            <a class="category" href="/categories/life/">Life</a>
-                            
-                            
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="post summary">
-            
-            <div class="post-text grow">
-                <div class="post-title">
-                    <h5><a href=/posts/2010-02-18-bai-nian/>拜年</a></h5>
-                </div>
-                <div class="post-header">
-    <div style="padding-top: 10px;">
-        <i class="far fa-calendar"></i><span class="date">Feb 18, 2010</span>
-        <i class="far fa-clock"></i><span class="reading-time">One minute</span>
-        
-
-
-    </div>
-</div>
-                <div class="post-content">
-                    <div class="p_part">
-                        
-                        
-                            <p><p>04年走后只在暑假回老家过几次，自然也就提不上在老家过年了。也就今年，趁着职业生涯以来最轻松的一个赛季，隆冬三九未过赶回老家期待感受久违的年味。</p></p>
-                        
-                    </div>
-                </div>
-                <div class="post-footer">
-                    <div class="meta">
-                        <div class="info">
-                            <a class="category" href="/categories/life/">Life</a>
-                            
-                            
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="post summary">
-            
-            <div class="post-text grow">
-                <div class="post-title">
-                    <h5><a href=/posts/2010-01-13-xiao-de/>小得</a></h5>
-                </div>
-                <div class="post-header">
-    <div style="padding-top: 10px;">
-        <i class="far fa-calendar"></i><span class="date">Jan 13, 2010</span>
-        <i class="far fa-clock"></i><span class="reading-time">One minute</span>
-        
-
-
-    </div>
-</div>
-                <div class="post-content">
-                    <div class="p_part">
-                        
-                        
-                            <p>风停雨住稍稍，
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>小得
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>风停雨住稍稍，
 晴光潋滟方好，
 萍碎一池，春色何踪去？
 阶边青苔正茂，
@@ -412,44 +244,18 @@
 当楼残照，
 一任点滴至天明。
 沧海桑田，不与人老。</p>
-                        
-                    </div>
-                </div>
-                <div class="post-footer">
-                    <div class="meta">
-                        <div class="info">
-                            <a class="category" href="/categories/life/">Life</a>
-                            
-                            
+  </div>
+  <footer class="entry-footer"><span title='2010-01-13 13:09:00 -0800 PST'>January 13, 2010</span></footer>
+  <a class="entry-link" aria-label="post link to 小得" href="https://sonneblog.com/posts/2010-01-13-xiao-de/"></a>
+</article>
 
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="post summary">
-            
-            <div class="post-text grow">
-                <div class="post-title">
-                    <h5><a href=/posts/2009-12-21-mo-ming-wen/>莫名问</a></h5>
-                </div>
-                <div class="post-header">
-    <div style="padding-top: 10px;">
-        <i class="far fa-calendar"></i><span class="date">Dec 21, 2009</span>
-        <i class="far fa-clock"></i><span class="reading-time">One minute</span>
-        
-
-
-    </div>
-</div>
-                <div class="post-content">
-                    <div class="p_part">
-                        
-                        
-                            <p>桥边红药为谁生，极天青鸟为谁来?
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>莫名问
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>桥边红药为谁生，极天青鸟为谁来?
 常山采薇为谁食，楚地湘江为谁投？
 红粉妆黛为谁容，寒水一别为谁赴?
 歌来正气为谁吟，曲自虞姬为谁叹？
@@ -457,117 +263,103 @@
 横刀向天为谁笑，昆仑肝胆为谁留？
 朱雀同台为谁起，骊山阿房为谁营？
 弹指一瞬红颜老，刹那芳华总是春。</p>
-                        
-                    </div>
-                </div>
-                <div class="post-footer">
-                    <div class="meta">
-                        <div class="info">
-                            <a class="category" href="/categories/life/">Life</a>
-                            
-                            
+  </div>
+  <footer class="entry-footer"><span title='2009-12-21 13:33:00 -0800 PST'>December 21, 2009</span></footer>
+  <a class="entry-link" aria-label="post link to 莫名问" href="https://sonneblog.com/posts/2009-12-21-mo-ming-wen/"></a>
+</article>
 
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>题由开篇点
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>人生有缘千里见，进我空间且听谈：
+清风爽人却有日，凉月沁心永无边。
+人生能得一二三，何必强求七八烦？
+世事古来自难全，不如安闲一亩田。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-08-25 20:28:00 -0800 -0800'>August 25, 2009</span></footer>
+  <a class="entry-link" aria-label="post link to 题由开篇点" href="https://sonneblog.com/posts/2009-08-25-ti-you-kai-pian-dian/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://sonneblog.com/page/3/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
     
-        
-        <div class="post summary">
-            
-            <div class="post-text grow">
-                <div class="post-title">
-                    <h5><a href=/posts/2009-08-25-ti-you-kai-pian-dian/>题由开篇点</a></h5>
-                </div>
-                <div class="post-header">
-    <div style="padding-top: 10px;">
-        <i class="far fa-calendar"></i><span class="date">Aug 25, 2009</span>
-        <i class="far fa-clock"></i><span class="reading-time">One minute</span>
-        
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://sonneblog.com/">陋室</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
 
-    </div>
-</div>
-                <div class="post-content">
-                    <div class="p_part">
-                        
-                        
-                            <p><p>人生有缘千里见，进我空间且听谈：</p>
-<p>清风爽人却有日，凉月沁心永无边。</p>
-<p>人生能得一二三，何必强求七八烦？</p>
-<p>世事古来自难全，不如安闲一亩田。</p></p>
-                        
-                    </div>
-                </div>
-                <div class="post-footer">
-                    <div class="meta">
-                        <div class="info">
-                            <a class="category" href="/categories/life/">Life</a>
-                            
-                            
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
 
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    
-        <div class="pagination">
-            
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/page/3/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 4" class="page-link" role="button">4</a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-        </div>
-    
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-                <div class="grow"></div>
-                <div class="built-with">
-    Built with <a href="https://gohugo.io/">Hugo</a> <b>·</b> Using the <a href="https://github.com/LucasVadilho/heyo-hugo-theme">heyo</a> theme
-</div>
-            </div>
-        </div>
-        
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</script>
+</body>
 
-<script type="text/javascript">
-            
-            
-            window.MathJax = {
-                tex: {
-                    inlineMath: [['$', '$'], ['\\(', '\\)']],
-                    displayMath: [['$$','$$'], ['\\[', '\\]']]
-                },
-                svg: {
-                    scale: 1.25,
-                }
-            };
-        </script><script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.1.0/es5/tex-mml-svg.min.js" integrity="sha512-/mL9Gs6E5Bz6NtPOr9eY&#43;T8IIdJbo2JL3TudApzFFelwBXEc3TeFLU6kPq122TJROv7jkktuBRkz5h8vGzrsyA==" crossorigin="anonymous"></script>
-    </body>
 </html>
