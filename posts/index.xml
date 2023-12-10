@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 陋室</title>
+    <title>陋室</title>
     <link>https://sonneblog.com/posts/</link>
-    <description>Recent content in Posts on 陋室</description>
+    <description>Recent content on 陋室</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 06 Feb 2021 15:30:00 -0800</lastBuildDate>
@@ -687,6 +687,13 @@
 &lt;p&gt;清风爽人却有日，凉月沁心永无边。&lt;/p&gt;
 &lt;p&gt;人生能得一二三，何必强求七八烦？&lt;/p&gt;
 &lt;p&gt;世事古来自难全，不如安闲一亩田。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://sonneblog.com/posts/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sonneblog.com/posts/test/</guid>
+      <description>qwe #</description>
     </item>
   </channel>
 </rss>
